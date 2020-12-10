@@ -1,0 +1,24 @@
+[credential]
+	helper = manager
+[user]
+	name = {my-name}
+	email = {my-email}
+[gui]
+	recentrepo = {recent-repo}
+[core]
+	editor = {some-editor}
+[merge]
+    tool = winmerge
+[mergetool "winmerge"]
+    cmd = wMerge.sh \"$MERGED\" \"$REMOTE\"
+    path = c:/Program Files (x86)/winmerge/winmergeu.exe
+[mergetool]
+    keepBackup = false
+    trustExitCode = false
+[diff]
+    guitool = winmerge
+[difftool]
+	prompt = false
+[difftool "winmerge"]	
+    path = c:/Program Files (x86)/winmerge/winmergeu.exe
+    cmd = \"c:/Program Files (x86)/winmerge/winmergeu.exe\" \"$LOCAL\" \"$REMOTE\"
